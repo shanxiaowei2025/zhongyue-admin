@@ -1,0 +1,9 @@
+version: '3'
+services:
+  frontend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: zhongyue-admin
+    volumes:
+      - /data/apps/web/frontend/zhongyue-admin/dist:/app/dist
