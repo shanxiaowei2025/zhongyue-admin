@@ -24,6 +24,7 @@ export default ({ mode }) => {
         clientFiles: ["./index.html", "./src/{views,components}/*"]
       }
     },
+
     plugins: [
       ...getPluginsList(VITE_CDN, VITE_COMPRESSION),
       createCDNConfig(useCDN)
